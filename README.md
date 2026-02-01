@@ -71,7 +71,7 @@ chmod o-w project_k.txt
 **Objective:** Ensure that a sensitive file is accessible only to the file owner.
 
 ```bash
-chmod g-r project_m.txt
+chmod u-w,g-w,g+r .project_x.txt
 ```
 
 ![Secure restricted file](screenshots/step%203.png)
@@ -84,33 +84,14 @@ chmod g-r project_m.txt
 
 - Protects sensitive project data.
 
-### 4️⃣ Change Permissions on a Hidden File
-
-**Objective:** Secure an archived hidden file so it cannot be modified.
-
-```bash
-
-chmod ug-w .project_x.txt
-```
-
-![Hidden file permissions](screenshots/step%204.png)
-
-**Explanation:**
-
-- Removes write access for both user and group.
-
-- Maintains read-only access.
-
-- Preserves file integrity.
-
-### 5️⃣ Restrict Directory Access
+### 4️⃣ Restrict Directory Access
 
 **Objective:** Ensure that only the file owner can access a sensitive directory.
 
 ```bash
 chmod g-x drafts
 ```
-![Directory permission changes](screenshots/step%205.png)
+![Directory permission changes](screenshots/step%204.png)
 
 **Explanation:**
 
