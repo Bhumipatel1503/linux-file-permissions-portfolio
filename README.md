@@ -35,6 +35,9 @@ cd projects
 ls -l
 ls -la
 ```
+
+![Check file and directory permissions](screenshots/step%201.png)
+
 **Explanation:**
 
 - Lists all files and directories with permission details.
@@ -52,6 +55,9 @@ ls -la
 ```bash
 chmod o-w project_k.txt
 ```
+
+![Remove unauthorized write access](screenshots/step%202.png)
+
 **Explanation:**
 
 - Removes write permissions for other users.
@@ -67,6 +73,9 @@ chmod o-w project_k.txt
 ```bash
 chmod g-r project_m.txt
 ```
+
+![Secure restricted file](screenshots/step%203.png)
+
 **Explanation:**
 
 - Removes read access for the group.
@@ -83,6 +92,9 @@ chmod g-r project_m.txt
 
 chmod ug-w .project_x.txt
 ```
+
+![Hidden file permissions](screenshots/step%204.png)
+
 **Explanation:**
 
 - Removes write access for both user and group.
@@ -98,6 +110,8 @@ chmod ug-w .project_x.txt
 ```bash
 chmod g-x drafts
 ```
+![Directory permission changes](screenshots/step%205.png)
+
 **Explanation:**
 
 - Removes execute permissions for the group.
